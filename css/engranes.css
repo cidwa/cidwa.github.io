@@ -1,0 +1,297 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+body{
+
+
+}
+.container{
+
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cuadrado{
+  color: white;
+}
+.centro{
+  display: flex;
+  justify-content: center;
+    height: auto;
+}
+.texto{
+text-align: center;
+  top: 0;
+  color: white;
+  font-size: 93px;
+  font-family: 'Baloo Tamma', cursive;
+}
+
+.engran1
+{
+  position: absolute;
+}
+.engran2{
+  height: 300px;
+  position:absolute;
+  bottom: 250px;
+  left:100px;
+
+}
+.engran3{
+  height: 300px;
+  position: absolute;
+  left:350px;
+  bottom: 390px;
+
+
+}
+.engran4{
+  height: 100px;
+  position: absolute;
+  top:20px;
+  left: 200px;
+
+}
+.engran5{
+  height: 200px;
+  position: absolute;
+  right: 570px;
+  bottom: 600px;
+}
+.engran6{
+  height: 400px;
+  position: absolute;
+  top: 100px;
+  left: 648px;
+}
+.engran7{
+  height: 200px;
+  position: absolute;
+  bottom: 150px;
+  left: 380px
+}
+.engran8{
+  height: 300px;
+  position: absolute;
+  left:-200px;
+  top:150px;
+
+}
+.engran9{
+  height: 100px;
+  position: absolute;
+  top: 410px;
+  left: 20px
+}
+.engran10{
+  height: 300px;
+  position: absolute;
+  top: 500px;
+  left: -100px
+}
+.engran11{
+  height: 250px;
+  position: absolute;
+  right: 250px;
+  top:-10px;
+}
+.engran12{
+  height: 300px;
+  position: absolute;
+  top:500px;
+  right: 860px;
+}
+.engran13{
+  height: 250px;
+  position: absolute;
+  right: 210px;
+  top: 400px;
+}
+.engran14{
+  height: 150px;
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+.engran15{
+  height: 350px;
+  position: absolute;
+  top:500px;
+  right: 530px;
+}
+.engran16{
+  height: 350px;
+  position: absolute;
+  top:400px;
+  right: -130px
+}
+.engran17{
+  height: 110px;
+  position: absolute;
+  right: 500px;
+}
+.engran18{
+  height: 350px;
+  position: absolute;
+  bottom: -6px;
+  right: 118px;
+}
+.engran19{
+  height: 250px;
+  position: absolute;
+  right: -100px;
+  top: 150px;
+}
+.engran20{
+  height: 150px;
+  position: absolute;
+  top: 270px;
+  right: 200px;
+}
+
+
+.derecha{
+  -webkit-animation: 3s der linear infinite;
+}
+.izquierda {
+  -webkit-animation: 3s izq linear infinite;
+}
+
+
+@-webkit-keyframes der {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes izq {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 1200px){
+
+  .engran10{
+  display: none;
+  }
+  .engran13{
+    display: none;
+  }
+  .engran15{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px){
+
+
+  .engran3{
+    display: none;
+  }
+
+  .engran5{
+    display: none;
+  }
+  .engran6{
+    display: none;
+  }
+
+  .engran11{
+    display: none;
+  }
+  .engran10{
+  display: block;
+  }
+
+  .engran13{
+    display: none;
+  }
+  .engran14{
+  top: 300px;
+  }
+  .engran15{
+    display: none;
+  }
+  .engran17{
+    right: 0;
+  }
+  .engran18{
+    display: none;
+  }
+
+
+
+}
+@media screen and (max-width: 700px){
+
+
+  .engran2{
+    left: 176px;
+  }
+
+  .engran5{
+    display:block;
+    right: 205px;
+    top: 82px;
+  }
+  .engran6{
+    display: none;
+  }
+
+  .engran11{
+    display: none;
+  }
+
+  .engran13{
+    display: none;
+  }
+  .engran14{
+  top: 300px;
+  }
+  .engran15{
+    display: none;
+  }
+  .engran17{
+    right: 0;
+  }
+  .engran18{
+    display: none;
+  }
+
+
+
+}
+@media screen and (max-width: 480px){
+  .texto{
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 400px){
+
+  .texto{
+    font-size: 45px;
+  }
+  .engran16{
+    top: auto;
+    right: 9px;
+    bottom: -116px;
+  }
+  .engran5{
+    right: 115px;
+    bottom: -106px;
+  }
+}
+.engranes{
+    width: 0%;
+}

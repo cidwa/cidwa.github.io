@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+
+
+}
+body{
+    background: #8BD6EB;
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.text{
+
+  width: 80%;
+
+  font-size: 30px;
+ text-align: center;
+
+}
+.aeroazul img{
+    width: 200px;
+
+}
+.aeroazul{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+}
+
+figure img{
+    width: 200px;
+
+}
+figure{
+   text-align: center;
+
+}
+
+
+
+/*-------------  ANIMACION      ----*/
+
+
+
+.objetoP{
+         -webkit-animation: walkP 28.0s linear  infinite;
+}
+.objetoN{
+         -webkit-animation: walkN 30.0s linear  infinite;
+}
+
+@-webkit-keyframes walkP{
+    0% {
+
+         left: -20%;
+    }
+    100% {
+
+        left: 120%;
+    }
+
+}
+@-webkit-keyframes walkN{
+    0% {
+
+         left: 100%;
+    }
+    100% {
+
+        left: -20%;
+    }
+
+}
+/*-------------  ANIMACION      ----*/

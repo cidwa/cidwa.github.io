@@ -1,0 +1,556 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body , html{
+
+width: 100%;
+  height: 100%;
+  position: relative;
+  /*background-color: #000120;*/
+  background-color: red;
+
+}
+.container{
+
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+
+}
+.menu{
+    z-index: 50;
+    position: absolute;
+    display: none;
+}
+.encabezado1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+}
+.text2{
+  color: white;
+  z-index: 2;
+  text-align: center;
+  list-style: none;
+  font-size: 24px;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 3;
+}
+
+.flex{
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.primero{
+  background-color: #000120;
+  height:  100%;
+  width: 33.3%;
+  float: left;
+
+}
+.segundo{
+  /*background-color:  #8BD6EB;*/
+  background-color: #29AAE1;
+  height:  100%;
+  width: 33.3%;
+  float: left;
+}
+.tercero{
+  /*background-color: #e67e22;*/
+  background-image:url('../img/fondo-largo6.png');
+  background-size: cover;
+  height:  100%;
+  width: 33.3%;
+  float: left;
+}
+.logo{
+  position: absolute;
+  width: 320px;
+  top: 40%;
+}
+/*---------objetos--------*/
+.p1{
+  position: absolute;
+  top:10px;
+  right: 27px;
+}
+.p2{
+  position: absolute;
+  bottom: 58px;
+  left:  12px;
+
+}
+.cuadro{
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+
+  position: absolute;;
+  top: 40%;
+}
+.cuadro img{
+  width: 150px;
+}
+/*---------objetos--------*/
+
+.mundo{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  width: 200px;
+  height:200px;
+  background:url('../img/tierra.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.marte{
+  position: absolute;
+
+  display: inline-block;
+  width: 160px;
+  height:160px;
+
+  background:url('../img/marte.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.marteP{
+
+  position: absolute;
+  top:50%;
+}
+.urano{
+  position: absolute;
+
+  display: inline-block;
+  width: 130px;
+  height:130px;
+
+  background:url('../img/urano.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.uranoP{
+
+  position: absolute;
+  top:90%;
+}
+.luna{
+  position: absolute;
+
+  display: inline-block;
+  width: 100px;
+  height:100px;
+
+  background:url('../img/luna.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.lunaP{
+  position: absolute;
+  top:40%;
+}
+.venus{
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height:80px;
+  background:url('../img/venus.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 3s infinite linear;
+}
+.venusP{
+  position: absolute;
+  top:74%;
+}
+.jupiter{
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height:120px;
+  background:url('../img/jupiter.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 4s infinite linear;
+}
+.jupiterP{
+  position: absolute;
+  top:49%;
+}
+.mercurio{
+  position: absolute;
+  display: inline-block;
+  width: 90px;
+  height:90px;
+  background:url('../img/mercurio.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.mercurioP{
+  position: absolute;
+  top:70%;
+}
+.saturno{
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height:100px;
+  background:url('../img/saturno.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.saturnoP{
+  position: absolute;
+  top:25%;
+}
+.neptuno{
+  position: absolute;
+  display: inline-block;
+  width: 135px;
+  height:135px;
+  background:url('../img/saturno.png');
+  border-radius: 50%;
+  box-shadow: -40px -30px 0 0 rgba(0, 0, 0, .15) inset,
+  -70px -40px 0 0 rgba(0, 0, 0, .1)inset,
+  5px 5px 0 0 rgba(255,255, 255, .2)inset;
+  background-size: cover;
+  -webkit-animation: mundogirando 5s infinite linear;
+}
+.neptunoP{
+  position: absolute;
+  top:650%;
+}
+.satelite{
+  display: inline-block;
+  position: absolute;
+  top:20%;
+
+}
+.satelite img{
+  width: 60px;
+}
+.meteoro{
+  display: inline-block;
+  position: absolute;
+  top:10%;
+
+}
+.meteoro img{
+  width: 100px;
+}
+.cohete{
+  display: inline-block;
+  position: absolute;
+  top:70%;
+
+}
+.cohete img{
+  width: 100px;
+}
+.nave_esp{
+  display: inline-block;
+  position: absolute;
+  top:45%;
+}
+.nave_esp img{
+  width: 70px;
+}
+.derecha{
+  -webkit-animation: 3s der linear infinite;
+}
+.izquierda {
+  -webkit-animation: 3s izq linear infinite;
+}
+.abajo{
+    -webkit-animation :td 40s linear infinite;
+}
+.arriba{
+    -webkit-animation :dt 20s linear infinite;
+}
+/*-------------  ANIMACION      ----*/
+.planetaP{
+  -webkit-animation: walkP 25.0s linear  infinite;
+}
+.planetaN{
+  -webkit-animation: walkN 30.0s linear  infinite;
+}
+.objetoP{
+  -webkit-animation: walkP 48.0s linear  infinite;
+}
+.objetoP2{
+  -webkit-animation: walkP 30.0s linear  infinite;
+}
+.objetoN{
+  -webkit-animation: walkN 10.0s linear  infinite;
+}
+.objetoN2{
+  -webkit-animation: walkN 30.0s linear  infinite;
+}
+.objetoN3{
+  -webkit-animation: walkN 48.0s linear  infinite;
+}
+.planetaPR{
+  -webkit-animation: walkPR 75.0s linear  infinite;
+
+}
+.planetaNR{
+  -webkit-animation: walkNR 80.0s linear  infinite;
+
+}
+.planetaNR2{
+  -webkit-animation: walkNR2 180.0s linear  infinite;
+
+}
+.planetaPMR{
+  -webkit-animation: walkPMR 105.0s linear  infinite;
+
+}
+.planetaNMR{
+  -webkit-animation: walkNMR 120.0s linear  infinite;
+
+}
+.planetaPMR2{
+  -webkit-animation: walkPMR 175.0s linear  infinite;
+
+}
+.planetaNMR2{
+  -webkit-animation: walkNMR 290.0s linear  infinite;
+
+}
+.objetoPR{
+  -webkit-animation: walkPR 55.0s linear  infinite;
+
+}
+.objetoNR{
+  -webkit-animation: walkNR 60.0s linear  infinite;
+
+}
+.objetoPMR{
+  -webkit-animation: walkPMR 45.0s linear  infinite;
+
+}
+.objetoNMR{
+  -webkit-animation: walkNMR 38.0s linear  infinite;
+
+}
+
+@-webkit-keyframes td{
+    0%{
+        top:-20%;
+        left: 30%;
+
+    }
+
+    50%{
+        top: 50%;
+        left: 70%;
+    }
+
+    100%{
+        top: 120%;
+        left:  50%;
+    }
+}
+@-webkit-keyframes dt{
+    0%{
+        top:120%;
+        right: 120%;
+
+    }
+
+
+
+    100%{
+      top: -20%;
+    right:  -20%;
+    }
+}
+
+@-webkit-keyframes mundogirando {
+  from{
+    background-position: left center;
+  }
+  to{
+    background-position: -396px center;
+  }
+}
+@-webkit-keyframes walkP{
+  0% {
+
+    left: -20%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
+@-webkit-keyframes walkPR{
+  0% {
+
+    left: -60%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
+@-webkit-keyframes walkPMR{
+  0% {
+
+    left: -120%;
+  }
+  100% {
+
+    left: 120%;
+  }
+
+}
+@-webkit-keyframes walkN{
+  0% {
+
+    left: 100%;
+  }
+  100% {
+
+    left: -20%;
+  }
+
+}
+@-webkit-keyframes walkNR{
+  0% {
+
+    left: 160%;
+  }
+  100% {
+
+    left: -20%;
+  }
+
+}
+@-webkit-keyframes walkNR2{
+  0% {
+
+    left: 160%;
+  }
+  100% {
+
+    left: -60%;
+  }
+
+}
+@-webkit-keyframes walkNMR{
+  0% {
+
+    left: 190%;
+  }
+  100% {
+
+    left: -60%;
+  }
+
+}
+@-webkit-keyframes der {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes izq {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@media screen and (max-width:1000px) {
+
+  .primero{
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .segundo{
+      position: relative;
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .tercero{
+    height: 33%;
+    min-height: 400px;
+    width: 100%;
+    float: none;
+  }
+  .mundo{
+    top: 12%;
+  }
+  .cuadro{
+    position: relative;
+    top:100px;
+  }
+  .logo{
+      position: absolute;
+    width: 320px;
+    top: 23%;
+  }
+}
